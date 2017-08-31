@@ -1,0 +1,18 @@
+ <ion-menu side="left" [content]="sideMenu" swipeEnabled="false">
+    <ion-content>
+     <ion-list>
+      <ion-list-header color="dark">
+        환영합니다!
+      </ion-list-header>
+      <ion-item menuClose (click)="SetPage('Home');">Home</ion-item>
+      <ion-item menuClose (click)="SetPage('AdMobFree');">AdMobFree</ion-item>
+      <ion-item menuClose (click)="SetPage('NativeSettings');">NativeSettings</ion-item>
+      <ion-item menuClose (click)="SetPage('Etc');">Etc</ion-item>
+      <ion-item menuClose (click)="SetPage('Etc2');">Etc2</ion-item>
+      <ion-item menuClose (click)="SetPage('Etc3');">Etc3</ion-item>
+      <ion-item menuClose (click)="SetPage('Etc4');">Etc4</ion-item>
+      <ion-item menuClose (click)="SetPage('Etc5');">Etc5</ion-item>
+    </ion-list>
+    </ion-content>
+  </ion-menu>
+<ion-nav #sideMenu [root]="rootPage"></ion-nav>
